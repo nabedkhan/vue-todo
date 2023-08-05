@@ -17,6 +17,7 @@
 <script>
 import { nanoid } from "nanoid";
 import Swal from "sweetalert2";
+import Toastify from "toastify-js";
 
 import axios from "./utils/axios";
 import TodoList from "./components/for-app-3/TodoList.vue";
@@ -75,6 +76,13 @@ export default {
       try {
         const { data } = await axios.put("/", this.todoList);
         this.todoList = data.record;
+
+        Toastify({
+          close: true,
+          text: "New Todo Created!",
+          className: "font-medium text-gray-200 rounded-lg shadow-sm",
+          backgroundColor: "#16a34a",
+        }).showToast();
       } catch (error) {
         console.log(error);
       }
@@ -87,6 +95,13 @@ export default {
       try {
         const { data } = await axios.put("/", this.todoList);
         this.todoList = data.record;
+
+        Toastify({
+          close: true,
+          text: "Todo Updated!",
+          className: "font-medium text-gray-200 rounded-lg shadow-sm",
+          backgroundColor: "#16a34a",
+        }).showToast();
       } catch (error) {
         console.log(error);
       }
