@@ -1,29 +1,52 @@
-# vue-recap
+# Vue Todo App
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern, responsive todo application built with Vue 3 and Vite. This project demonstrates the implementation of a todo list application using Vue's Composition API and Tailwind CSS for styling.
 
-## Recommended IDE Setup
+Live demo: [vue-todo-nabed.vercel.app](https://vue-todo-nabed.vercel.app/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Features
 
-## Customize configuration
+- ✅ Create, read, update, and delete todo items
+- ✅ Mark todos as completed
+- ✅ Filter todos by status (All, Active, Completed)
+- ✅ Responsive design that works on mobile and desktop
+- ✅ Local storage persistence to save todos between sessions
+- ✅ Clean and intuitive user interface
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Technologies Used
+
+- **Vue 3**: Frontend framework with Composition API
+- **Vite**: Next generation frontend tooling
+- **Tailwind CSS**: Utility-first CSS framework
+- **JavaScript**: Programming language
+- **Vercel**: Deployment platform
 
 ## Project Setup
 
-```sh
-npm install
-```
+### Prerequisites
 
-### Compile and Hot-Reload for Development
+- Node.js (v14 or higher)
+- npm or yarn
 
-```sh
-npm run dev
-```
+### Installation
 
-### Compile and Minify for Production
+1. Clone the repository:
+   ```
+   git clone https://github.com/nabedkhan/vue-todo.git
+   cd vue-todo
+   ```
 
-```sh
-npm run build
-```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Run development server:
+   ```
+   npm run dev
+   ```
+
+4. Build for production:
+   ```
+   npm run build
+   ```
